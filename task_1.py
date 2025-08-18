@@ -4,16 +4,18 @@ total_min = 0
 for i in timelist:
     timelist_total = i.split()
     for j in timelist_total:
-        if 'h' in j:
+        if 'h' in j: #часы переводим в минуты
             timelist1 = j.replace('h', '')
             total_min += 60*(int(timelist1))
         #timelist_n += t1
-        elif 'm' in j:
+        elif 'm' in j: #складываем минуты
             timelist2 = j.replace('m', '')
             total_min += 1*(int(timelist2))
-        elif 's' in j:
+        elif 's' in j:  #секунды переводим в минуты
             timelist3 = j.replace('s', '') 
             total_min +=  (int(timelist3))/60
-print(int(total_min))
+
+
+print(int(total_min)) #общая сумма в минутах
 
 
