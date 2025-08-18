@@ -5,12 +5,10 @@ class TestCase:
         self.result = None
 
     def set_step(self, step_number, step_text):
-        self.step_number = step_number
-        self.step_text = step_text
-        self.steps[self.step_number] = self.step_text
+        self.steps[step_number] = step_text
 
     def delete_step(self, step_number):
-        del self.steps[self.step_number] 
+        del self.steps[step_number] 
 
     def set_result(self, result):
         self.result = result 
